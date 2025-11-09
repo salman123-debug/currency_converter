@@ -25,15 +25,21 @@ function App() {
   };
 
   return (
-    <div
-      className="app-container  "
-    //   style={{
-    //     backgroundImage:
-    //       "url('https://images.pexels.com/photos/30154480/pexels-photo-30154480/free-photo-of-dusk-at-the-beach-with-urban-skyline.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')",
-    //   }}
-    >
+    <div className="app-container">
       <div className="w-full">
-        <div className="w-full max-w-lg max-h-96 mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-xl mx-auto border border-gray-60 rounded-lg p-6 backdrop-blur-sm bg-white/30 shadow-lg">
+          
+          {/* 🌟 Heading added here */}
+         <h1 className="text-5xl font-extrabold text-center text-blue-950 mb-8 drop-shadow-md tracking-wide">
+  <span className="block text-6xl mb-2 animate-bounce">💱</span>
+  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+    Currency Converter
+  </span>
+</h1>
+<p className="text-center text-gray-900 text-sm italic mb-6">
+  Convert currencies instantly — powered by real-time rates 🌍
+</p>
+
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -73,7 +79,7 @@ function App() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
+              className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all"
             >
               Convert {from.toUpperCase()} to {to.toUpperCase()}
             </button>
